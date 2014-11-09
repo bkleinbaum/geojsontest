@@ -25,11 +25,10 @@ var to1000 = new L.GeoJSON.AJAX("/js/0-1000.geojson", {onEachFeature:makeMarkers
 // };
 
 
-// var toTwentyFive = new L.GeoJSON.AJAX("/js/1000-2500.geojson", {onEachFeature:makeMarkers2500
-// });
-// toTwentyFive.addTo(map);
+var toTwentyFive = new L.GeoJSON.AJAX("/js/2500.geojson", {onEachFeature:makeMarkers
+});
 
-// function makeMarkers2500 (feature,layer) {
+// function makeMarkers (feature,layer) {
 // 	layer.bindPopup(
 // 		"This lot is "
 // 		+feature.properties.sqft+" square feet"
@@ -86,12 +85,14 @@ function makeMarkers (feature,layer) {
 
 
 var size1000 = L.layerGroup([to1000]);
+var size2500 = L.layerGroup([toTwentyFive])
 var size5000 = L.layerGroup([toFive]);
 var size10000 = L.layerGroup([toTen]);
 var sizeInfinty = L.layerGroup([toInfinty])
 
 var overlays = {
 	"Up to 1000 square feet" : size1000,
+	"1001 to 2500 square feet": size2500,
 	"2501 to 5000 square feet": size5000,
 	"5001 to 10000 square feet": size10000,
 	"More than 10000 square feet": sizeInfinty
