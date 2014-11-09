@@ -12,7 +12,7 @@ function popUp(feature, layer) {
   layer.bindPopup(feature.properties.name);
 }
 
-var to1000 = new L.GeoJSON.AJAX("/js/0-1000.geojson", {onEachFeature:makeMarkers
+var to1000 = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/bkleinbaum/geojsontest/master/js/0-1000.geojson", {onEachFeature:makeMarkers
 });
 // to1000.addTo(map);
 
@@ -25,7 +25,7 @@ var to1000 = new L.GeoJSON.AJAX("/js/0-1000.geojson", {onEachFeature:makeMarkers
 // };
 
 
-var toTwentyFive = new L.GeoJSON.AJAX("/js/2500.geojson", {onEachFeature:makeMarkers
+var toTwentyFive = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/bkleinbaum/geojsontest/master/js/2500.geojson", {onEachFeature:makeMarkers
 });
 
 // function makeMarkers (feature,layer) {
@@ -37,7 +37,7 @@ var toTwentyFive = new L.GeoJSON.AJAX("/js/2500.geojson", {onEachFeature:makeMar
 // 		)};
 
 
-var toFive = new L.GeoJSON.AJAX("/js/2500-5000.geojson", {onEachFeature:makeMarkers
+var toFive = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/bkleinbaum/geojsontest/master/js/2500-5000.geojson", {onEachFeature:makeMarkers
 });
 // toFive.addTo(map);
 
@@ -50,7 +50,7 @@ var toFive = new L.GeoJSON.AJAX("/js/2500-5000.geojson", {onEachFeature:makeMark
 // 		)};
 
 
-var toTen = new L.GeoJSON.AJAX("/js/5000-10000.geojson", {onEachFeature:makeMarkers
+var toTen = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/bkleinbaum/geojsontest/master/js/5000-10000.geojson", {onEachFeature:makeMarkers
 });
 // toTen.addTo(map);
 
@@ -62,7 +62,7 @@ var toTen = new L.GeoJSON.AJAX("/js/5000-10000.geojson", {onEachFeature:makeMark
 // 		+feature.properties.agency 
 // 		)};
 
-var toInfinty = new L.GeoJSON.AJAX("/js/10000.geojson", {onEachFeature:makeMarkers
+var toInfinty = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/bkleinbaum/geojsontest/master/js/10000.geojson", {onEachFeature:makeMarkers
 });
 // toInfinty.addTo(map);
 
