@@ -10,14 +10,26 @@
 <body>
 
 
-<div id ="title"> <h1> City Owned Empty Lots</h1>
-<p align="right">Source: 596 Acres</p>
-</div>
+
 <div id="map"></div>
+<div id ="sideBar"><h1>Empty Lots in NYC</h1> 
+	<div id = "description"> 
+		This map shows empty lots owned by the City of New York as well as the MTA.<br><br>
+		It uses data collected by <a href = "http://www.596acres.org" target = "_blank">596 Acres</a> that has been converted into multipe geosjon files using <a href="http://www.togeojson.com" target = "_blank">togeojson.io</a>.<br><br>
+	</div>
+
+	<div id ="legend">
+	See where the lots are by size:<br><br>
+		<div id = "one"><a id="thousand" href="#">Up to 1000 square feet</a><br></div>
+		<div id = "twentyfive"><a id="twentyFiveHundred" href="#">1001 to 2500 square feet</a><br></div>
+		<div id = "five"><a id="fiveThousand" href="#">2501 to 5000 square feet </a><br></div>
+		<div id = "ten"><a id="tenThousand" href="#">5001 to 10000 square feet</a><br></div>
+		<div id = "infinite"><a id="infinity" href="#">10000 or more square feet </a><br></div>
+</div>	
 
 
  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://rawgit.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js"></script>
 <script src="js/script.js"></script>
 	

@@ -13,7 +13,7 @@ body {
 		background: rgba(15, 51, 56, 0.59); 
 		color: #FFFAFA;
     }
-#title {    
+#sideBar {    
 	background: rgba(15, 51, 56, 0.59);
 	position: absolute;
 	top: 0;
@@ -25,4 +25,24 @@ body {
 	font-size: 16px;
 	box-sizing: border-box;
 	z-index:10;
+	width: 25%;
+	word-wrap: break-word;
 }
+
+#one:hover, #twentyfive:hover, #five:hover, #ten:hover, #infinite:hover{
+	background-color: #47494D;
+}
+
+a:link { 
+    color: white;
+    text-decoration: none;
+    cursor: auto;
+
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+	background-color: #47494D
